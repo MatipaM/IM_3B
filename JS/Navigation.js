@@ -31,5 +31,20 @@ function DataVisualisationSection()
 
 function DataArt()
 {
-    location.href="DataVisualisationSection.html";
+    location.href="DataArt.html";
+}
+
+function Data()
+{
+    location.href="Data.html";
+}
+
+function DesignWireframes()
+{
+    location.href="DesignWireframes.html";
+}
+
+function DesignDocumentation()
+{
+    location.href="DesignDocumentation.html";
 }
