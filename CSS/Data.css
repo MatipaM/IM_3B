@@ -76,6 +76,11 @@ h3{
 } */
 
 
+cite{
+    background-color: rgba(52,120,160);
+    }
+
+
 @media (max-width: 512px){ 
 
 .grid{
