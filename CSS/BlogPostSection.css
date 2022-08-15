@@ -54,7 +54,7 @@ article:nth-child(2):hover
     border-radius: 5%;
     padding-top: 5%;
     padding-right: 5%;
-    padding-left: -5%;
+    margin-left: -5%;
 }
 
 h3{

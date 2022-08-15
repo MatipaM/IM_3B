@@ -47,15 +47,14 @@ article:nth-child(2):hover
     width: 90%;
     border-radius: 5%;
     padding-top: 5%;
-    margin-right: 15%;
+    margin-left: -5%;
 }
 
 .Img2{
     width: 90%;
     border-radius: 5%;
     padding-top: 5%;
-    padding-right: 10%;
-    padding-left: 0%;
+    margin-left: -5%;
 }
 
 h3{

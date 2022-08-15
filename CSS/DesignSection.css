@@ -47,6 +47,7 @@ article:nth-child(2):hover
     width: 75%;
     border-radius: 5%;
     padding-top: 5%;
+    /* margin-left: -25%; */
 }
 
 .Img2{
@@ -54,7 +55,8 @@ article:nth-child(2):hover
     border-radius: 5%;
     padding-top: 5%;
     margin-right: 15%;
-    padding-left: -5%;
+    margin-left: -5%;
+
 }
 
 h3{
