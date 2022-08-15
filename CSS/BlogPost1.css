@@ -1,0 +1,40 @@
+html{
+    background-image: linear-gradient(rgba(155,202,180), rgba(218,237,232));
+}
+
+body{
+    padding-right: 5%;
+}
+
+cite{
+    background-color: rgba(218,237,232);
+}
+
+h1{
+    margin-top:10%;
+}
+
+h2{
+    font-family: Coda_Caption;
+}
+
+
+@media (max-width: 512px){ 
+
+    h1{
+        font-size: 200%;
+    }
+  }
+
+@media (max-width: 1024px){ 
+    h1{
+        font-size: 300%;
+        margin-top: 10%;
+    }
+  }
+    @media (max-width: 2048px){ 
+        h1{
+            font-size: 400%;
+            margin-top: 10%;
+        }
+    }

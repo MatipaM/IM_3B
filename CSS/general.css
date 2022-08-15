@@ -50,7 +50,7 @@ body{
 }
 
 cite{
-
+background-color: rgba(52,120,160);
 }
 
 
@@ -116,19 +116,19 @@ li{
     padding: 0.4em 1em;
     border: 0.1em solid #6689A1;
     border-radius: 0.38em;
-    background-image: linear-gradient(white, #011936); 
+    background-image: linear-gradient(white, rgba(29,55,48)); 
     margin-top: 4%;
-    -moz-box-shadow: 0 0 10px #6689A1;
-    -webkit-box-shadow: 0 0 10px #6689A1;
-    box-shadow: 0 0 10px #6689A1;
+    -moz-box-shadow: 0 0 10px rgba(32,55,48);
+    -webkit-box-shadow: 0 0 10px rgba(32,55,48);
+    box-shadow: 0 0 10px rgba(32,55,48);
     margin-bottom: 5%;
   }
   #BtnFadeIn:hover {
-    background-image: linear-gradient(#011936, white); 
+    background-image: linear-gradient(rgba(32,55,48), white); 
     color: white; 
   }
   #BtnFadeIn:active {
-    background-image: linear-gradient(white, #011936); 
+    background-image: linear-gradient(white, rgba(32,55,48)); 
   }
 
   .NextBtn{
