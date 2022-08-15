@@ -48,3 +48,5 @@ function DesignDocumentation()
 {
     location.href="DesignDocumentation.html";
 }
+
+window.onresize = function(){ location.reload(); }

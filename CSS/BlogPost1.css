@@ -1,5 +1,7 @@
 html{
-    background-image: linear-gradient(rgba(155,202,180), rgba(218,237,232));
+    /* background-image: linear-gradient(rgba(155,202,180), rgba(218,237,232)); */
+    background-image: none;
+    background-color: rgba(155,202,180);
 }
 
 body{
@@ -7,7 +9,7 @@ body{
 }
 
 cite{
-    background-color: rgba(218,237,232);
+    background-color: rgba(155,202,180);
 }
 
 h1{
