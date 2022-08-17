@@ -36,11 +36,13 @@ article:nth-child(2)
 article:nth-child(1):hover
 {
     background-color: rgba(155,202,180);
+    cursor: pointer;
 }
 
 article:nth-child(2):hover
 {
     background-color: rgba(155,202,180);
+    cursor: pointer;
 }
 
 .fa-blog{
@@ -55,6 +57,7 @@ article:nth-child(2):hover
     width: 75%;
     border-radius: 5%;
     padding-top: 5%;
+
 }
 
 .Img2{
@@ -63,6 +66,14 @@ article:nth-child(2):hover
     padding-top: 5%;
     padding-right: 5%;
     margin-left: -5%;
+}
+
+.Img1:hover{
+    cursor: pointer;
+}
+
+.Img2:hover{
+    cursor: pointer;
 }
 
 h3{

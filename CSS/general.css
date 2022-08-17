@@ -43,10 +43,12 @@ nav{
 
 .u-url:hover{
  color: rgba(52,120,160);
+ cursor: pointer;
 }
 
 .fa-solid:hover{
     color: rgba(52,120,160);
+    cursor: pointer;
 }
 
 h1{

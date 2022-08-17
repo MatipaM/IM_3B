@@ -46,24 +46,28 @@ article:nth-child(2)
 article:nth-child(1):hover
 {
     background-color: rgba(37,89,82);
+    cursor: pointer;
     color: white;
 }
 
 article:nth-child(2):hover
 {
     background-color: rgba(37,89,82);
+    cursor: pointer;
     color: white;
 }
 
 article:nth-child(3):hover
 {
     background-color: rgba(37,89,82);
+    cursor: pointer;
     color: white;
 }
 
 article:nth-child(4):hover
 {
     background-color: rgba(37,89,82);
+    cursor: pointer;
     color: white;
 }
 
@@ -84,6 +88,10 @@ h1{
     padding-top: 5%;
     padding-right: 5%;
     padding-left: -5%;
+}
+
+.Img1:hover{
+    cursor: pointer;
 }
 
 h3{
