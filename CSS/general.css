@@ -12,6 +12,7 @@ html{
 }
 
 *{
+    cursor: auto;
     font-family: Tahoma;
     letter-spacing: 1.5px;
     word-spacing: 5px;

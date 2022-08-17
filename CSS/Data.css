@@ -43,6 +43,10 @@ article:nth-child(2):hover
     background-color: rgba(155,202,180);
 }
 
+.fa-database{
+    color: blue;
+}
+
 .Img1{
     width: 90%;
     border-radius: 5%;
