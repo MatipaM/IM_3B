@@ -1,7 +1,7 @@
 
 function Index()
 {
-    location.href="Index.html";
+    location.href="index.html";
 }
 
 function BlogPostSection()
