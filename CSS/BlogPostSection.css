@@ -47,6 +47,10 @@ article:nth-child(2):hover
     color: blue;
 }
 
+.currentPage{
+    color: blue;
+}
+
 .Img1{
     width: 75%;
     border-radius: 5%;
@@ -72,11 +76,6 @@ h3{
 .text2b{
     padding-top: 0%;
 } */
-
-
-cite{
-    background-color: rgba(52,120,160);
-    }
 
 
 @media (max-width: 512px){ 

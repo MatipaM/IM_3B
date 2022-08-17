@@ -14,11 +14,10 @@ p{
     box-shadow: 0 0 1% rgba(218,237,232);
 }
 
-
-cite{
-    background-color: rgba(52,120,160);
-    }
-
 .fa-house-chimney{
 color: blue;
+}
+
+.currentPage{
+    color: blue;
 }

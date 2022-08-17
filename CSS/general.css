@@ -41,6 +41,14 @@ nav{
    /* text-transform: uppercase; */
 }
 
+.u-url:hover{
+ color: rgba(52,120,160);
+}
+
+.fa-solid:hover{
+    color: rgba(52,120,160);
+}
+
 h1{
     font-family: Coda_Caption;
     font-size: 400%;

@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Coda_Caption;
+    src: url(../Coda_Caption/CodaCaption-ExtraBold.ttf);
+}
+
 .grid{
     display: grid;
     gap: 10rem;
@@ -59,6 +64,14 @@ article:nth-child(2):hover
 
 }
 
+.fa-paint-roller{
+    color: blue;
+}
+
+.currentPage{
+    color: blue;
+}
+
 h3{
     text-transform: uppercase;
 }
@@ -71,10 +84,6 @@ h3{
     padding-top: 0%;
 } */
 
-
-cite{
-    background-color: rgba(52,120,160);
-    }
 
 @media (max-width: 512px){ 
 
