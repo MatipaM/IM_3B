@@ -1,0 +1,14 @@
+html{
+    background-image: none;
+    background-color: rgba(155,202,180);
+}
+
+cite{
+    background-color: rgba(155,202,180);
+    text-align: left;
+}
+
+h1{
+    margin-top: 10%;
+    margin-left: -2%;
+}

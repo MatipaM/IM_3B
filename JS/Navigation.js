@@ -49,4 +49,9 @@ function DesignDocumentation()
     location.href="DesignDocumentation.html";
 }
 
+function References()
+{
+    location.href="References.html";
+}
+
 window.onresize = function(){ location.reload(); }
