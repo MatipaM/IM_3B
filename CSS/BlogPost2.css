@@ -7,15 +7,15 @@ img{
     margin-left: 5%;
 }
 
-.img1{
+.img-1{
     width: 50%;
 } 
 
-.img2{
+.img-2{
     border-radius: 5%;
 } 
 
-.img3{
+.img-3{
     background-color: rgba(227,245,245);
     padding: 1%;
     border-radius: 5%;
@@ -35,9 +35,9 @@ h3{
     margin-left: 5%;
 }
 
-cite{
+/* cite{
     margin-left: 5%;
-}
+} */
 
 
 

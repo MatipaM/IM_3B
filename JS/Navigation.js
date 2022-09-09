@@ -54,4 +54,9 @@ function References()
     location.href="References.html";
 }
 
+function RevisedWireframes()
+{
+    location.href="RevisedWireframes.html";
+}
+
 window.onresize = function(){ location.reload(); }

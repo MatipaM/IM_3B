@@ -90,13 +90,13 @@ h1{
     text-align: center;
 }
 
-.Img1{
+.img-1{
     width: 75%;
     border-radius: 5%;
     padding-top: 5%;
 }
 
-.Img2{
+.img-2{
     width: 90%;
     border-radius: 5%;
     padding-top: 5%;
@@ -104,7 +104,7 @@ h1{
     padding-left: -5%;
 }
 
-.Img1:hover{
+.img-1:hover{
     cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ h3{
     text-transform: uppercase;
 }
 
-.text2a{
+.text-2a{
     padding-top: 7%;
 }
 /* 
@@ -120,7 +120,7 @@ h3{
     padding-top: 0%;
 } */
 
-.img1{
+.img-1{
     width: 85%;
 }
 

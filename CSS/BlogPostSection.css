@@ -7,7 +7,7 @@
     margin-top: 10%;
 }
 
-article:nth-child(1)
+a:nth-child(1)
 {
     width:75%;
     background-color: rgba(255,255,255,0.7);
@@ -20,7 +20,7 @@ article:nth-child(1)
     margin-bottom: 5%;
 }
 
-article:nth-child(2)
+a:nth-child(2)
 {
     width:75%;
     background-color: rgba(255,255,255,0.7);
@@ -33,13 +33,13 @@ article:nth-child(2)
     margin-bottom: 5%;
 }
 
-article:nth-child(1):hover
+a:nth-child(1):hover
 {
     background-color: rgba(155,202,180);
     cursor: pointer;
 }
 
-article:nth-child(2):hover
+a:nth-child(2):hover
 {
     background-color: rgba(155,202,180);
     cursor: pointer;
@@ -49,18 +49,18 @@ article:nth-child(2):hover
     color: blue;
 }
 
-.currentPage{
+.current-page{
     color: blue;
 }
 
-.Img1{
+.img-1{
     width: 75%;
     border-radius: 5%;
     padding-top: 5%;
 
 }
 
-.Img2{
+.img-2{
     width: 90%;
     border-radius: 5%;
     padding-top: 5%;
@@ -68,11 +68,11 @@ article:nth-child(2):hover
     margin-left: -5%;
 }
 
-.Img1:hover{
+.img-1:hover{
     cursor: pointer;
 }
 
-.Img2:hover{
+.img-2:hover{
     cursor: pointer;
 }
 
@@ -80,11 +80,11 @@ h3{
     text-transform: uppercase;
 }
 
-.text2a{
+.text-2a{
     padding-top: 7%;
 }
 /* 
-.text2b{
+.text-2b{
     padding-top: 0%;
 } */
 
@@ -96,7 +96,14 @@ h3{
     margin-left: 2%;
 }
 
+h1{
+    font-size: 300%;
+}
 
+h2{
+    font-size: 200%;
+    text-transform: uppercase;
+}
 
 @media (max-width: 512px){ 
 
@@ -118,13 +125,39 @@ article{
     height: 60%;
 }
 
+
+h1{
+    font-size: 150%;
+}
+
+h2{
+    font-size: 80%;
+}
+
   }
 
 @media (max-width: 1024px){ 
     .grid{
         gap: 5rem;
     }
+
+    h1{
+        font-size: 150%;
+    }
+    
+    h2{
+        font-size: 80%;
+    }
+
   }
     @media (max-width: 2048px){ 
+
+        h1{
+            font-size: 200%;
+        }
+        
+        h2{
+            font-size: 100%;
+        }
 
     }

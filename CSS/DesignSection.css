@@ -6,13 +6,13 @@
 .grid{
     display: grid;
     gap: 10rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 10%;
 }
 
-article:nth-child(1)
+a:nth-child(1)
 {
     width:75%;
     background-color: rgba(255,255,255,0.7);
@@ -25,7 +25,7 @@ article:nth-child(1)
     margin-bottom: 5%;
 }
 
-article:nth-child(2)
+a:nth-child(2)
 {
     width:75%;
     background-color: rgba(255,255,255,0.7);
@@ -38,26 +38,45 @@ article:nth-child(2)
     margin-bottom: 5%;
 }
 
-article:nth-child(1):hover
+a:nth-child(3)
+{
+    width:75%;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 3%;
+
+    -moz-box-shadow: 0 0 1% rgba(155,202,180);
+    -webkit-box-shadow: 0 0 1% rgba(155,202,180);
+    box-shadow: 0 0 1% rgba(218,237,232);
+
+    margin-bottom: 5%;
+}
+
+a:nth-child(1):hover
 {
     background-color: rgba(155,202,180);
     cursor: pointer;
 }
 
-article:nth-child(2):hover
+a:nth-child(2):hover
 {
     background-color: rgba(155,202,180);
     cursor: pointer;
 }
 
-.Img1{
+a:nth-child(3):hover
+{
+    background-color: rgba(155,202,180);
+    cursor: pointer;
+}
+
+.img-1{
     width: 75%;
     border-radius: 5%;
     padding-top: 5%;
     /* margin-left: -25%; */
 }
 
-.Img2{
+.img-2{
     width: 90%;
     border-radius: 5%;
     padding-top: 5%;
@@ -66,11 +85,11 @@ article:nth-child(2):hover
 
 }
 
-.Img1:hover{
+.img-1:hover{
     cursor: pointer;
 }
 
-.Img2:hover{
+.img-2:hover{
     cursor: pointer;
 }
 
@@ -78,7 +97,7 @@ article:nth-child(2):hover
     color: blue;
 }
 
-.currentPage{
+.current-page{
     color: blue;
 }
 
@@ -86,11 +105,11 @@ h3{
     text-transform: uppercase;
 }
 
-.text2a{
+.text-2a{
     padding-top: 7%;
 }
 /* 
-.text2b{
+.text-2b{
     padding-top: 0%;
 } */
 

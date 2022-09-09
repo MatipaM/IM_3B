@@ -4,9 +4,6 @@ html{
     background-color: rgba(155,202,180);
 }
 
-body{
-    padding-right: 5%;
-}
 
 cite{
     background-color: rgba(155,202,180);
@@ -14,11 +11,13 @@ cite{
 
 h1{
     margin-top:10%;
-    padding-left: 7%;
+    padding-left: 5%;
 }
 
 h2{
     font-family: Coda_Caption;
+    font-size: 200%;
+    margin-left: 5%;
 }
 
 
