@@ -1,0 +1,24 @@
+html{
+    /* background-image: url(../Images/Background/ProfilePageBackground.jpg); */
+    /* opacity: 0.1; */
+    /* height: 100vh; */
+    /* width: 200vh; */
+  background-size: cover;
+  background-color: rgba(236,236,219,0.5);
+  background-image: none;
+  cursor: auto;
+  font-family: Tahoma;
+  /* font-family: Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+body{
+    margin-top: 10%;
+}
+
+cite{
+    background-color: none;
+}
+
+h1{
+    margin-top: -5%;
+}
