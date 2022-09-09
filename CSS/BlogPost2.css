@@ -2,3 +2,42 @@ h1{
     text-align: left;
     padding-left: 7%;
 }
+
+img{
+    margin-left: 5%;
+}
+
+.img1{
+    width: 50%;
+} 
+
+.img2{
+    border-radius: 5%;
+} 
+
+.img3{
+    background-color: white; 
+    padding: 1%;
+    border-radius: 5%;
+}
+
+h2{
+    font-family: Tahoma;
+    text-transform: uppercase;
+}
+
+h2{
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+h3{
+    margin-left: 5%;
+}
+
+cite{
+    margin-left: 5%;
+}
+
+
+
