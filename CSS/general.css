@@ -113,12 +113,21 @@ li{
     display: none;
 }
 
+.gridBtns{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
 #BtnFadeIn {
     font-size: 100%;
     font-weight: 600;
     font-family: Tahoma;
     text-align: center;
-    width: 10%;
+    width: 15%;
     text-decoration: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -143,18 +152,15 @@ li{
   }
 
   .NextBtn{
-    margin-left: 20%;
     grid-column: 3;
   }
 
   .TopBtn{
     grid-column: 2;
-    /* margin-left: 45%; */
   }
   
   .PrevBtn{
     grid-column: 1;
-    margin-right: 20%;
   }
 
 

@@ -12,6 +12,7 @@ let offset = 10;
 
 
 let vizArea = d3.select("#viz");
+console.log(vizArea);
 let xScale = d3.scaleLinear().domain([0,100]).range([0,500]);
 let yScale = d3.scaleLinear().domain([0,100]).range([500,0]);
 
