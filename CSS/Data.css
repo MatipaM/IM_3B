@@ -92,6 +92,13 @@ h3{
     padding-top: 0%;
 } */
 
+.p-contact{
+    background-color: rgba(25,43,55);
+    border-radius: 5%;
+    width: 25%;
+    color: rgba(227,245,245);
+    margin-left: 2%;
+}
 
 @media (max-width: 512px){ 
 
