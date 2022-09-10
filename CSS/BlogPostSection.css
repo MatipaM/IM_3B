@@ -136,6 +136,18 @@ h2{
 
   }
 
+  @media (max-width: 2048px){ 
+
+    h1{
+        font-size: 200%;
+    }
+    
+    h2{
+        font-size: 100%;
+    }
+
+}
+
 @media (max-width: 1024px){ 
     .grid{
         gap: 5rem;
@@ -150,14 +162,3 @@ h2{
     }
 
   }
-    @media (max-width: 2048px){ 
-
-        h1{
-            font-size: 200%;
-        }
-        
-        h2{
-            font-size: 100%;
-        }
-
-    }

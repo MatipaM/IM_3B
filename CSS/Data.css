@@ -122,20 +122,22 @@ article{
 
 }
 
+
+    @media (max-width: 2048px){ 
+
+        h1{
+            font-size: 200%;
+        }
+
+}
+
 @media (max-width: 1024px){ 
     .grid{
         gap: 5rem;
     }
 
     h1{
-        font-size: 60%;
+        font-size: 125%;
     }
-
-}
-    @media (max-width: 2048px){ 
-
-        h1{
-            font-size: 200%;
-        }
 
 }

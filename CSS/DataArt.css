@@ -106,34 +106,70 @@ h3{
     padding-top: 0%;
 } */
 
-
-@media (max-width: 512px){ 
-
-.grid{
-    display: block;
-    margin-top: 10%;
+h1{
+    font-size: 300%;
 }
 
-article:nth-child(1){
+h2{
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 2048px){ 
+
+    h1{
+        font-size: 200%;
+    }
     
-    margin-bottom: 10%;
-}
+    h2{
+        font-size: 100%;
+    }
 
-nav{
-    margin-bottom: 50%;
 }
-
-article{
-    height: 60%;
-}
-
-  }
 
 @media (max-width: 1024px){ 
     .grid{
         gap: 5rem;
     }
-  }
-    @media (max-width: 2048px){ 
 
+
+    h1{
+        font-size: 125%;
     }
+    
+    h2{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 512px){ 
+
+    .grid{
+        display: block;
+        margin-top: 10%;
+    }
+
+    article:nth-child(1){
+        
+        margin-bottom: 10%;
+    }
+
+    nav{
+        margin-bottom: 50%;
+    }
+
+    article{
+        height: 60%;
+    }
+
+    h1{
+        font-size: 150%;
+    }
+
+    h2{
+        font-size: 80%;
+    }
+
+}
+
+
