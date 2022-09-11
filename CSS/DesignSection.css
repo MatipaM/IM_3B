@@ -69,20 +69,27 @@ a:nth-child(3):hover
     cursor: pointer;
 }
 
+/* .text-2a{
+    margin-top: -2%;
+    margin-
+} */
+
+img{
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
 .img-1{
     width: 75%;
     border-radius: 5%;
-    padding-top: 5%;
-    /* margin-left: -25%; */
+    margin-bottom: 5%;
 }
 
 .img-2{
     width: 90%;
     border-radius: 5%;
-    padding-top: 5%;
     margin-right: 15%;
-    margin-left: -5%;
-
+    margin-bottom: 5%;
 }
 
 .img-1:hover{
@@ -102,15 +109,35 @@ a:nth-child(3):hover
 }
 
 .text-2a{
-    padding-top: 7%;
+    padding-top: 10%;
 }
-/* 
+
 .text-2b{
     padding-top: 0%;
-} */
+}
+
+.text-2c{
+    padding-top: 9%;
+}
 
 h1{
     font-size: 150%;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.p-contact{
+    background-color: rgba(25,43,55);
+    border-radius: 5%;
+    width: 25%;
+    color: rgba(227,245,245);
+}
+
+footer{
+    margin-right: 30%;
 }
 
 @media (max-width: 512px){ 
@@ -134,6 +161,7 @@ article{
 }
 
   }
+  
 
 @media (max-width: 1024px){ 
     .grid{

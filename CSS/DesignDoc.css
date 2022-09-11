@@ -22,6 +22,8 @@ h1{
 
     margin-bottom: 5%;
     margin-right: 5%;
+    margin-left: 5%;
+    /* margin-right: 5%; */
 }
 
 h2 {
@@ -35,4 +37,19 @@ h4{
 .u-photo{
     margin-left: 10%;
     width: 7%;
+}
+
+.container{
+    margin-left: 10%;
+}
+
+.p-contact{
+    background-color: rgba(25,43,55);
+    border-radius: 5%;
+    width: 25%;
+    color: rgba(227,245,245);
+}
+
+footer{
+    margin-right: 0%;
 }
