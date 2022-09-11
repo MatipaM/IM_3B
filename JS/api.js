@@ -1,9 +1,11 @@
-fetch('https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49')
-.then((r) => 
-    r.json())
+fetch('https://ghibliapi.herokuapp.com/films')
+.then((r) =>
+    r.json()
+    )
 .then((p) => {
-    console.log(p);
-    return handleStudioGhibli(p);
+    // console.log(p.title);
+    // return handleStudioGhibli(p);
+    console.log(p)
 })
 .catch(
     error => console.warn('Our warning',error));
