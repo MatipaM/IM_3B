@@ -101,10 +101,6 @@ a:nth-child(3):hover
     color: blue;
 }
 
-h3{
-    text-transform: uppercase;
-}
-
 .text-2a{
     padding-top: 7%;
 }
@@ -113,7 +109,9 @@ h3{
     padding-top: 0%;
 } */
 
-
+h1{
+    font-size: 150%;
+}
 
 @media (max-width: 512px){ 
 
@@ -140,6 +138,10 @@ article{
 @media (max-width: 1024px){ 
     .grid{
         gap: 5rem;
+    }
+
+    h1{
+        font-size: 80%;
     }
   }
     @media (max-width: 2048px){ 

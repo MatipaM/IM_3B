@@ -108,7 +108,11 @@ h1{
     cursor: pointer;
 }
 
-h3{
+h1{
+    font-size: 300%;
+}
+
+h2{
     text-transform: uppercase;
 }
 
@@ -150,6 +154,10 @@ article{
 @media (max-width: 1024px){ 
     .grid{
         gap: 5rem;
+    }
+
+    h1{
+        font-size: 150%;
     }
   }
     @media (max-width: 2048px){ 
