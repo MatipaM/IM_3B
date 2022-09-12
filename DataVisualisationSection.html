@@ -13,7 +13,6 @@
 
         <script src = "https://d3js.org/d3.v4.min.js"></script>
         <script src="JS/api.js" crossorigin="anonymous"></script>
-        <script src="JS/dataVisualisation.js"></script>
         
         <meta charset="utf-8" />   
         <title>Matipa's Data Visualisation Website</title>
@@ -42,33 +41,56 @@
         <h1>Data Visualisation</h1>
             <section class="grid">
                 <article>
-                    <svg id="viz" width="350" height="350"></svg> 
+                    <h2 class="graph-title">Studio Ghibli film ratings over the years</h2>
+                    <svg id="viz" width="550" height="550"></svg> 
                     <!-- change in css width and height in css -->
                     <!-- <img src="Images/BlogPostsImages/DataVisualisationImg.png" alt="Image of Data Visualisation" class="Img1 u-photo"> -->
-                        <h2>graph title?</h2>
-                        <h3>long and details data analysis</h3>
+                        
+                        <h3>Exactly 14 out of 22 Studio Ghibli films have received a rotten tomatoe score of 90% or over. 
+                            Two of these films have an average of 100%. 
+                            I used a blue opaque rectangle to direct the user's eyes to the film rankings' as those top-rating films are the main point of my visualisation. 
+                            I then used a dark grey colour to bring everything else into the background. 
+                            I decided to use blue as my primary colour, as my website's main theme colour's theme are the blue's and green's that can be found in nature, as most Studio Ghibli films are set out in nature. 
+                            The above diagram makes use of a scatter graphs which has almost no correlation between the two variables.
+                            This can be concluded from the graph (whose scatter points almost resemble a horizonral line) as it proves that regardless of the year, Studio Ghibli tends to produce good films regardless of when they were made. 
+                            However, this conclusion also comes With anamolies such as the most recent 2021 movie which received a rotten tomato score of 30%. 
+                        </h3>
+                        <h4></h4>
         </article>
             
         <article>
-                    <h2 class="text-2a">Placeholder (Analysis)</h2>
+                    <!-- <h2 class="text-2a">Placeholder (Analysis)</h2>
                     <img class="img-1">
                     <h3 class="text-2b"></h3>
+
+                    <a onclick="nextMovie()" class="next-movie-btn u-url">Next</a> -->
+
+                    <h2>Studio Ghibli film ratings by movie length</h2>
+                    <svg id="viz-2" width="550" height="550"></svg> 
+                        <h3>This scatter graph is one with moderate correlation, as it proves that movies within a certain time period of 95 to 122 minutes tend to out-perform movies which are not within this time range. 
+                            However, they are anamolies to this conclusion hence, why I conclude that this scatter graph is moderately correlated and not strongly.
+                            I used a scatter diagram for both of my visualisations because it made it easier for a user to glance at the graph and quickly get an insight into the overall trend. 
+                            This worked well in my context because my observations tended to be based on highlighting an overall trend as opposed to e.g. a sudden change of events therefore a scatter graph seemed like a good way to display the data with little clutter.
+In another attempt to avoid clutter I shortened the headings on my x and y axis. 
+However, I did not want take out so much extra information that it would affect the user’s ability to understand what was happening in my graph so I made sure the title was quite detailed. 
+And that the graph included highlighted areas to emphasise the points I was trying to convey.
+                        </h3>
             </article>
 
 </section>
 
-            <section class="grid">
+            <!-- <section class="grid">
                 <article>
-                    <img src="Images/BlogPostsImages/DataVisualisationImg.png" alt="Image of Data Visualisation" class="img-1 u-photo">
-                        <h2>Placeholder (title)</h2>
-                        <h3>Short description on data will be inserted here</h3>
-        </article>
+                    <!-- <h2>Placeholder (title)</h2>
+                    <svg id="viz-2" width="550" height="550"></svg> 
+                        <h3>Short description on data will be inserted here</h3> -->
+        <!-- </article>
             
         <article>
                     <h2 class="text-2a">Placeholder (Analysis)</h2>
                     <h3 class="text-2b">long and detailed description on data will be inserted here</h3>
             </article>
-</section>
+</section> --> 
 
 
         <span class="h-entry grid-btns">

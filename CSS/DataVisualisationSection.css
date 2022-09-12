@@ -43,7 +43,11 @@ article:nth-child(2)
     margin-bottom: 5%;
 }
 
-article:nth-child(1):hover
+.graph-title{
+    color: #545454;
+}
+
+/* article:nth-child(1):hover
 {
     background-color: rgba(37,89,82);
     cursor: pointer;
@@ -69,21 +73,13 @@ article:nth-child(4):hover
     background-color: rgba(37,89,82);
     cursor: pointer;
     color: rgba(227,245,245);
+} */
+
+.dots:hover{
+    font-size: 200%;
+    color: darkgreen;
 }
 
-article:nth-child(5):hover
-{
-    background-color: rgba(37,89,82);
-    cursor: pointer;
-    color: rgba(227,245,245);
-}
-
-article:nth-child(6):hover
-{
-    background-color: rgba(37,89,82);
-    cursor: pointer;
-    color: rgba(227,245,245);
-}
 
 h1{
     font-size: 200%;
@@ -100,6 +96,7 @@ h2{
 h3{
     font-size: 100%;
     padding: 5%;
+    text-align: justify;
 }
 
 .img-1{
@@ -136,6 +133,14 @@ h3{
 
 .img-1{
     width: 85%;
+}
+
+#viz{
+    padding: 5%;
+}
+
+#viz-2{
+    padding: 5%;
 }
 
 
