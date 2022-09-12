@@ -88,7 +88,7 @@ sourceData = r.json()
             .style("fill", "navy")  
             .attr("x", 50)     
             .attr("y", 20)    
-            .attr("width", 600)
+            .attr("width", 500)
             .attr("height",50 )
             .attr("opacity",0.3 )
 

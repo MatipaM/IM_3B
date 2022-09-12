@@ -32,35 +32,44 @@
        
     </header>
 
+    <h1>Planning Documentation for Static Data Visualisations</h1>
 
-
-    <section>
-<h1>Style Guide</h1>
-    </section>
-
-    <article class="style-guide-container">
-    <h1>Main Heading</h1>
-    <h2>TITLES</h2>
-    <h4>Title Descriptions</h4>
-    
-    <p><h2>Colour Scheme</h2>
-    <img src="Images/StyleGuide/White.png" alt="Sample colour white" class="img-1 u-photo">
-    <img src="Images/StyleGuide/Green.png" alt="Sample colour green" class="img-1 u-photo">
-    <img src="Images/StyleGuide/Light_blue.png" alt="Sample colour light blue" class="img-1 u-photo">
-    <img src="Images/StyleGuide/Turquoise.png" alt="Sample colour turquoise" class="img-1 u-photo">
-     
+<p>
+    I decided to use a scatter graph because their main function is to show the correlation between the values on the x and y axis. 
+    I wanted to see whether the x and y variables were dependent on one another. I also aimed to draw the user’s attention my main point, which was what aspects I though may have contributed to Studio Ghibli’s success by examining when their movies were most popular and how long each movies was.
+	As I know movie length can affect how viewer’s feel about certain films, for example if they felt that the content could have been told in a smaller amount of time, or if they felt that certain points needed to be expanded on.
 </p>
 
-<section>
-<p>I decided to use this colour scheme consisting mainly of blues and light greens because it went well with the Studio Ghibli background I had chosen. I chose the API and theme, 'Studio Ghibli Movies' because I thought it would be easy to make a beautiful yet informative website. In future development, the background image (and sound design) will be dependent on which movie the user wants to learn more about. In reponse to the user's selection, the data visualisation and data art page's will display the appropriate information with the corresponding aesthetic.</p>
 
-<p>On most pages, I went with a double column layout. As it allowed me to display an image/visualisation on one side and then it explain it in detail on the next side. I also think dividing up large chunks of information into two columns makes it easier for readers to skim through the text to find the essays they actually want to engage with.</p>
+<p>
+    I started by drawing sketches of how I wanted to represent my data, then plotted my data in d3. 
+    After that I was able to see my graph on my website. 
+    I then made observations based on how the graph came out and researched what different scatter graphs meant.
+    I used the research I had done to come up with a conclusion based on the data the graph had produced.
+</p>
 
-<p> I chose the font, 'Tahoma' as my main font as it is a sans serif font which makes it easier to read. The font I used for main headings, is one I imported from google fonts, it's called 'Coda_Caption'. It is also a sans serif font and has quite a heavy font weight which draws the readers' attention instantly. This makes it easier to sort information in a hierarchy as the 'Tahoma' font has quite a light font weight in comparison.</p>
+<section class="grid">
+<img src="/Images/DesignImg/RoughGraph1.jpg">
+<img src="/Images/DesignImg/RoughGraph2.jpg">
+<p>Figure 1. showing the sketch of graph 1</p>
+<p>Figure 2. showing the sketch of graph 2</p>
 </section>
+
+<p>
+    The <a href="https://ghibliapi.herokuapp.com/#" class="hyperlink">Studio Ghibli API</a> had several different sections such as the films, people, locations, species and vehicles.
+    I chose to focus mainly on films as I thought it would be considered the most interesting topic to a wider range of people.
+    I felt that going into specifics such as people and species would be too specialised as only extremely invested fans would recognise the names of characters from several different movies.
+    Especially considering that one of the aims of my website is to encourage people who have never heard of Studio Ghibli to watch some of their films.
+    Initially I had thought of using the 'people' API and mapping characters against race to see how diverse Studio Ghibli’s characters are, however as a Japanese studio, it does make sense that all of their characters are Japanese (and the API did not specify race). 
+    I also wanted to try looking at different vehicles used, and how many of each vehivle appeared in each movie/how many movies did different types of vehicles appear in - although they were only three different types of vehicles in the API which I felt was not enough variety to make an analysis, let alone come to any sort of conclusion.
+    
+</p>
+
+
     <span class="h-entry grid-btns">
-        <a onclick="DesignWireframes()" id="btn-fade-in" class="prev-btn u-url">Previous</a>
+        <a onclick="RevisedWireframes()" id="btn-fade-in" class="prev-btn u-url">Prev.</a>
         <a onclick="DesignDocumentation()" id="btn-fade-in" class="top-btn u-url">Top</a>
+        <a onclick="DesignWireframes()" id="btn-fade-in" class="next-btn u-url">Next</a>
         
     </span>
 

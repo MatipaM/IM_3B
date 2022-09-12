@@ -1,0 +1,33 @@
+html{
+    background-image: none;
+    background-color: rgba(155,202,180);
+}
+
+h1{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.img-colour{
+    margin-left: 10%;
+    width: 7%;
+}
+
+h2{
+    margin-left: 5%;
+}
+
+h3{
+    margin-left: 5%;
+}
+
+.style-guide-section
+{
+    background-color: rgba(227,245,245);
+    border-radius: 5%;
+}

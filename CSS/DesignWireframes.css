@@ -23,9 +23,24 @@ img
     align-items: center;
 }
 
-p
+/* p
 {
     width:75%;
+} */
+
+h2{
+    margin-left: 5%;
+}
+
+.img-colour{
+    margin-left: 10%;
+    width: 7%;
+}
+
+.style-guide-section
+{
+    background-color: rgba(227,245,245);
+    border-radius: 5%;
 }
 
 

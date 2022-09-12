@@ -12,7 +12,6 @@
 
 
 // let vizArea = d3.select("#viz");
-// console.log(vizArea);
 // let xScale = d3.scaleLinear().domain([0,100]).range([0,500]);
 // let yScale = d3.scaleLinear().domain([0,100]).range([500,0]);
 
@@ -28,8 +27,8 @@
 // .call(d3.axisBottom(xScale));
 
 // vizArea
-// .selectAll("dots") //identify different ele,emts
-// .data(exampleData) //goes after se;ect a;;
+// .selectAll("dots") //identify different elements
+// .data(exampleData) //goes after select a;
 // .enter() //must go after data
 // .append("circle")
 // .attr("cx", function(d){ //foreach

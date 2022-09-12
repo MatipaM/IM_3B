@@ -19,7 +19,7 @@ cite{
 
 article:nth-child(1)
 {
-    width:75%;
+    width:100%;
     background-color: rgba(255,255,255,0.7);
     border-radius: 3%;
 
@@ -32,7 +32,7 @@ article:nth-child(1)
 
 article:nth-child(2)
 {
-    width:75%;
+    width:100%;
     background-color: rgba(255,255,255,0.7);
     border-radius: 3%;
 

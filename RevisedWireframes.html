@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revised Wireframes</title>
-</head>
-<body>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="description" content="This is the design wireframes post of Matipa Marufu's data visualisation website.">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="keywords" content="design document, wireframes">
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" href="CSS/general.css">
+        <link rel="stylesheet" href="CSS/RevisedWireframes.css">
     
+        <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />   
+        <title>Revised Wireframes</title>
+    </head>
+    <body class="h-entry">
+    <header>
+
+
+        <!-- <input type="checkbox" id="check">
+        <label for="check" class="Bars"> <i class="fa-solid fa-bars"></i> </label> -->
+        
+        <nav class="h-entry">
+            <ul>
+
+            <li>  <a onclick="Index()" class="u-url"> <i class="fa-solid fa-house-chimney"></i>Home</a>  </li> 
+             <li>  <a onclick="BlogPostSection()" class="u-url"> <i class="fa-solid fa-blog"></i>Blogs</a>  </li>  
+             <li>  <a onclick="DesignSection()" class="u-url"> <i class="fa-solid fa-paint-roller"></i>Design</a>  </li>
+             <li>  <a onclick="Data()" class="u-url"> <i class="fa-solid fa-database"></i>Data</a>  </li>
+             <li>  <a onclick="References()" class="u-url"> <i class="fa-solid fa-rectangle-list"></i>References</a>  </li>
+             </ul>
+        </nav>
+       
+    </header>
+
+    <article class="wireframes-section">
+
+<h1>Revised Wireframes</h1>
+
+<section class="grid">
+<img src="Images/DesignImg/AnnotatedWireframe.png" alt="page with annotated wireframes" class="img-1 img u-photo">
+</section>
+</article>
+
+<article class="style-guide-section">
+<section>
+    <h1>Style Guide</h1>
+        </section>
+    
+        <article class="style-guide-container">
+        <h1>Main Heading</h1>
+        <h2>TITLES</h2>
+        
+        <p><h2>Colour Scheme:</h2>
+        <img src="Images/StyleGuide/White.png" alt="Sample colour white" class="img-colour u-photo">
+        <img src="Images/StyleGuide/Green.png" alt="Sample colour green" class="img-colour u-photo">
+        <img src="Images/StyleGuide/Light_blue.png" alt="Sample colour light blue" class="img-colour u-photo">
+        <img src="Images/StyleGuide/Turquoise.png" alt="Sample colour turquoise" class="img-colour u-photo">
+         
+    </p>
+    
+
+<p>I wanted my website to have a cloudy dream-like feel to it, which is why I used opaque white boxes as the background text. 
+    I also wanted to create a steeper contrast between text and background as neither black or white text can be seen clearly on the pages which had the Studio Ghibli art.
+I kept the same colour theme from my last submission, as I think the green's and blues fit in well with the Studio Ghibli theme.
+I am still using the font 'Tahoma', from my last submission as I enjoy how easy it is to read, and the increased font weight stands out nicely on a lightly coloured page.
+This submission I focused on aligning different items on the page together, as I wanted headings and text heavy paragraphs to look more structured when placed on the same page.</p>
+
+<p>When it comes to my data visualisations, I aligned them side by side, however for the next assignment I want to make it more interactive so that when the user clicks on a point on the graph, it displays the title, an image and description of the movie next to the graph. 
+    As well as a 'next' button which will cycle through all the movies, whilst highlighting the selected point on the graph. 
+    That way the user can see the selected movie in relation to its corresponding data on the visualisation.
+As currently, the data is on the graphs is not linked to the movie titles, which makes it difficult for the user to identify which movies are the anamolies.</p>
+
+<p>In the future I would like to implement the scrolling effect which can be seen on Apple’s website. This effect consists of animations which run when the user scrolls through the webpage. 
+I plan to add these animations in, but with small snippets from the Studio Ghibli movie running when the user scrolls. I would also like to allow the user to customise certain aspects of the website, whether that be by uploading a profile picture or saving their favourite movie data, however, this would require me to do some more research on the back-end as personalised information would need to be saved on some sort of database.
+
+ </p>
+
+</article>
+    <span class="h-entry grid-btns">
+        
+        <a onclick="DesignWireframes()" id="btn-fade-in" class="prev-btn u-url">Prev.</a>
+        <a onclick="RevisedWireframes()" id="btn-fade-in" class="top-btn u-url">Top</a>
+        <a onclick="DesignDocumentation()" id="btn-fade-in" class="next-btn u-url">Next</a>
+    </span>
+
+</article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/Navigation.js"></script>
+
+    <footer class="h-card">
+        <p class="p-contact">contact email: ocmatipa@gmail.com</p>
+    </footer>
+
 </body>
+
 </html>
