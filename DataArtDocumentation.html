@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="description" content="This is the design documentation post of Matipa Marufu's data visualisation website.">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="keywords" content="Studio Ghibli API, data visualisation, data art, design document, style guide">
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" href="CSS/general.css">
+        <link rel="stylesheet" href="CSS/DataArtDocumentation.css">
+    
+        <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />   
+        <title>Matipa's Data Visualisation Website</title>
+    </head>
+    <body class="h-entry">
+    <header>
+
+
+        <!-- <input type="checkbox" id="check">
+        <label for="check" class="Bars"> <i class="fa-solid fa-bars"></i> </label> -->
+        
+        <nav class="h-entry">
+            <ul>
+            <li>  <a onclick="Index()" class="u-url"> <i class="fa-solid fa-house-chimney"></i>Home</a>  </li> 
+             <li>  <a onclick="BlogPostSection()" class="u-url"> <i class="fa-solid fa-blog"></i>Blogs</a>  </li>  
+             <li>  <a onclick="DesignSection()" class="u-url"> <i class="fa-solid fa-paint-roller"></i>Design</a>  </li>
+             <li>  <a onclick="Data()" class="u-url"> <i class="fa-solid fa-database"></i>Data</a>  </li>
+             <!-- <li>  <a onclick="References()" class="u-url"> <i class="fa-solid fa-rectangle-list"></i>References</a>  </li> -->
+             </ul>
+        </nav>
+       
+    </header>
+
+    <h1>Planning Documentation for Data Art</h1>
+
+<p>
+    I'm not sure if the API I have chosen will work for creating the type of art I would like to curate with my data.
+    Hence I am considering creating my own database or seeing if I can find a collection of images from the film.
+    I would then use those images to create an artwork which would look similar to a collage but also a colour script. 
+    Colour scripts are commonly used in animations to convery the tone and pacing of the film.
+    Therefore I felt it would be fitting, to use photographic data from the films to create an overarching view of the film's visual colouring.
+    This may help users on my site who have not seen some of the films to pick which one they would like to see, as they can filter through the art for happier (brighter coloured) films.
+    In they same way, they can filter for films which seem to be set in nature (green/blue) as opposed to industrial (grey) based films. 
+</p>
+
+<h2>My inspiration:</h2>
+
+<p>
+    
+    <img class="img-1" src="Images/DataArt/DataArtEx1.jpeg">
+    Figure 1.
+    <img class="img-2" src="Images/DataArt/DataArtEx2.png">
+    Figure 2.
+</p>
+
+
+<p>
+</p>
+
+
+    <span class="h-entry grid-btns">
+        <a onclick="DesignDocumentation()" id="btn-fade-in" class="prev-btn u-url">Prev.</a>
+        <a onclick="DataArtDocumentation()" id="btn-fade-in" class="top-btn u-url">Top</a>
+        <a onclick="InteractiveDataDocumentation()" id="btn-fade-in" class="next-btn u-url">Next</a>
+        
+    </span>
+
+</article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/Navigation.js"></script>
+    <footer class="h-card">
+        <p class="p-contact">contact email: ocmatipa@gmail.com</p>
+    </footer>
+</body>
+
+</html>

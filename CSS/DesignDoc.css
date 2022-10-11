@@ -49,10 +49,9 @@ h4{
 }
 
 .p-contact{
-    background-color: rgba(25,43,55);
     border-radius: 5%;
     width: 25%;
-    color: rgba(227,245,245);
+    color: black;
 }
 
 .grid{
@@ -62,7 +61,7 @@ h4{
     grid-template-rows: repeat(2, 1fr);
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: -5%;
+    margin-bottom: 5%;
     /* padding-bottom: 1%; */
 }
 
@@ -87,6 +86,3 @@ img:nth-child(2)
     text-decoration: underline;
 }
 
-footer{
-    margin-right: 0%;
-}

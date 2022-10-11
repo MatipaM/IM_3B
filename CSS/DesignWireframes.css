@@ -23,10 +23,9 @@ img
     align-items: center;
 }
 
-/* p
-{
-    width:75%;
-} */
+footer{
+    background-color: none;
+}
 
 h2{
     margin-left: 5%;

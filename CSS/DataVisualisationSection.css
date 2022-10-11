@@ -43,6 +43,11 @@ article:nth-child(2)
     margin-bottom: 5%;
 }
 
+.form-1{
+    margin-top: 5%;
+    padding: 5%;
+}
+
 .graph-title{
     color: #545454;
 }
@@ -100,39 +105,30 @@ h3{
 }
 
 .img-1{
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 75%;
     width: auto;
     height: auto;
     border-radius: 5%;
-    padding: 5%;
+    padding-left: 12.5%;
 
 }
 
 .img-2{
-    width: 90%;
+    max-width: 75%;
+    max-height: 75%;
+    width: auto;
+    height: auto;
     border-radius: 5%;
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: -5%;
+    padding-left: 12.5%;
 }
 
 .img-1:hover{
     cursor: pointer;
 }
 
-
-
-.text-2a{
-    padding-top: 7%;
-}
-/* 
-.text2b{
-    padding-top: 0%;
-} */
-
-.img-1{
-    width: 85%;
+.img-2:hover{
+    cursor: pointer;
 }
 
 #viz{

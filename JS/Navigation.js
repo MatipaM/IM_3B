@@ -27,6 +27,11 @@ function BlogPost2()
     location.href="BlogPost2.html";
 };
 
+function BlogPost3()
+{
+    location.href="BlogPost3.html";
+};
+
 function DesignSection()
 {
     location.href="DesignSection.html";
@@ -42,6 +47,11 @@ function DataArt()
     location.href="DataArt.html";
 };
 
+function DataArtDocumentation()
+{
+    location.href="DataArtDocumentation.html";
+} 
+
 function Data()
 {
     location.href="Data.html";
@@ -55,6 +65,11 @@ function DesignWireframes()
 function DesignDocumentation()
 {
     location.href="DesignDocumentation.html";
+};
+
+function InteractiveDataDocumentation()
+{
+    location.href="InteractiveDataDocumentation.html";
 };
 
 function References()

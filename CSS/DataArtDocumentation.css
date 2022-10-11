@@ -1,0 +1,68 @@
+footer{
+    background-color: none;
+}
+
+img{
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    margin-left: 15%;
+}
+
+h1{
+    margin-top: 8%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+html{
+    background-image: none;
+    background-color: rgba(155,202,180);
+}
+
+
+.fa-paint-roller{
+    color: blue;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.u-photo{
+    margin-left: 10%;
+    width: 7%;
+}
+
+.p-contact{
+    border-radius: 5%;
+    width: 25%;
+    color: black;
+}
+
+img:nth-child(1)
+{
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    width: 70%;
+    border-radius: 5%;
+}
+
+img:nth-child(2)
+{
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    width: 70%;
+    border-radius: 5%;
+}
+
+
+
