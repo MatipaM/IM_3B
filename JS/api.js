@@ -213,10 +213,10 @@ sourceData = r.json()
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear()
-             .domain(producers[0], producers[1], producers[2], producers[3], producers[4], producers[5],
+             .domain([producers[0], producers[1], producers[2], producers[3], producers[4], producers[5],
                 producers[6], producers[7], producers[8], producers[9], producers[10], producers[11],
                 producers[12], producers[13], producers[14], producers[15], producers[16], producers[17],
-                producers[18], producers[19], producers[20], producers[21])
+                producers[18], producers[19], producers[20], producers[21]])
              .range([0,500]);
              let yScale3 = d3.scaleLinear().domain([0,100]).range([500,0]);
              
