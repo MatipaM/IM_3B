@@ -209,6 +209,7 @@ sourceData = r.json()
              let xOffset3 = 20; //1914
              let yOffset3 = 0;
              
+             console.log(producers[0])
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear()
