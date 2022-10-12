@@ -126,7 +126,7 @@ sourceData = r.json()
             
             let vizArea2 = d3.select("#viz-2");
             let xScale2 = d3.scaleLinear().domain([80,140]).range([0,500])
-            .padding(0.5);
+            .padding([0.5]);
             let yScale2 = d3.scaleLinear().domain([0,100]).range([500,0]);
             
             vizArea2
