@@ -268,7 +268,7 @@ sourceData = r.json()
          //     })
  
              vizArea3.append("text")
-             .text("min")
+             .text("producers")
              .attr("x", 300)
              .attr("y", 570)
              .style("font-size", "20px")
