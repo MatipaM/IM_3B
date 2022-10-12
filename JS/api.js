@@ -223,6 +223,7 @@ sourceData = r.json()
              let xScale3 = d3.scaleLinear()
             //  .domain([uniqueProducers[0], uniqueProducers[1], uniqueProducers[2], uniqueProducers[3]])
             .domain("Isao Takahata", "Hayao Miyazaki", "Toshio Suzuki", "Yoshiaki Nishimura")
+            // .domain([0,125])
              .range([0,500]);
              let yScale3 = d3.scaleLinear().domain([0,100]).range([500,0]);
              
