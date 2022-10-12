@@ -36,6 +36,7 @@ sourceData = r.json()
     }
 
         console.log(movieData, movieData2)
+        console.log(producers);
 
             let margin = 50; 
             let topMargin = 20;
@@ -205,12 +206,14 @@ sourceData = r.json()
              let margin3 = 50; //position where placeholder image is
              let topMargin3 = 20;
              let graphHeight3 = 500;
-             let xOffset3 = 0; //1914
-             let yOffset3 = 3;
+             let xOffset3 = -10; //1914
+             let yOffset3 = 0;
              
              
              let vizArea3 = d3.select("#viz-3");
-             let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
+             let xScale3 = d3.scaleLinear()
+             .append(producers[i])
+             .range([0,500]);
              let yScale3 = d3.scaleLinear().domain([0,100]).range([500,0]);
              
              vizArea3
