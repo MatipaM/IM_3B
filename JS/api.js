@@ -206,7 +206,7 @@ sourceData = r.json()
              let margin3 = 50; //position where placeholder image is
              let topMargin3 = 20;
              let graphHeight3 = 500;
-             let xOffset3 = -10; //1914
+             let xOffset3 = -20; //1914
              let yOffset3 = 0;
              
              
@@ -286,10 +286,10 @@ sourceData = r.json()
  
  
              d3.selectAll("label") //for each p element, it returns Hello
-             .data(movieTitles) //binding data to element p, takes in an array
+             .data(producers) //binding data to element p, takes in an array
              .text(function(d, i){ //i is index
                  let text = d3.selectAll("label").innerText;
-                 text = movieTitles[i]; //this refers to the element being return in d3.selectAll("p")
+                 text = producer[i]; //this refers to the element being return in d3.selectAll("p")
              })
 })
 .catch(
