@@ -12,6 +12,7 @@ sourceData = r.json()
     let ratings= [];
     let dateReleased= [];
     let producers = [];
+    let uniqueProducers = []; //no duplicates
     let movieData3 = [];
     let movieData2 = [];
     let movieData = [];
@@ -29,6 +30,13 @@ sourceData = r.json()
         runningTime.push(p[i].running_time);
         description.push(p[i].description);
         producers.push(p[i].producer)
+        let uniqueProducerSet = [...new Set(producers)];
+
+        for(i=0; i < uniqueProducerSet.size; i++)
+        {
+            uniqueProducers.push(p[i]);
+        }
+
         images.push(p[i].image);
         movieData.push({x: dateReleased[i],y: ratings[i]})
         movieData2.push({x: runningTime[i],y: ratings[i]})
@@ -213,10 +221,8 @@ sourceData = r.json()
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear()
-             .domain([producers[0], producers[1], producers[2], producers[3], producers[4], producers[5],
-                producers[6], producers[7], producers[8], producers[9], producers[10], producers[11],
-                producers[12], producers[13], producers[14], producers[15], producers[16], producers[17],
-                producers[18], producers[19], producers[20], producers[21]])
+            //  .domain([uniqueProducers[0], uniqueProducers[1], uniqueProducers[2], uniqueProducers[3]])
+            .domain("Isao Takahata", "Hayao Miyazaki", "Toshio Suzuki", "Yoshiaki Nishimura")
              .range([0,500]);
              let yScale3 = d3.scaleLinear().domain([0,100]).range([500,0]);
              
