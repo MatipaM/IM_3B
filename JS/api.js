@@ -11,8 +11,6 @@ sourceData = r.json()
     let movieTitles= [];
     let ratings= [];
     let dateReleased= [];
-    let producers = [];
-    let uniqueProducers = []; //no duplicates
     let movieData3 = [];
     let movieData2 = [];
     let movieData = [];
@@ -29,8 +27,6 @@ sourceData = r.json()
         dateReleased.push(p[i].release_date);
         runningTime.push(p[i].running_time);
         description.push(p[i].description);
-        producers.push(p[i].producer)
-        let uniqueProducerSet = [...new Set(producers)];
 
         for(i=0; i < uniqueProducerSet.size; i++)
         {
@@ -40,12 +36,10 @@ sourceData = r.json()
         images.push(p[i].image);
         movieData.push({x: dateReleased[i],y: ratings[i]})
         movieData2.push({x: runningTime[i],y: ratings[i]})
-        // movieData3.push({x: producers[i], y: ratings[i]})
         movieData3.push({x: runningTime[i], y: dateReleased[i]})
     }
 
         console.log(movieData, movieData2)
-        console.log(producers);
 
             let margin = 50; 
             let topMargin = 20;
@@ -217,8 +211,6 @@ sourceData = r.json()
              let graphHeight3 = 500;
              let xOffset3 = 0; //1914
              let yOffset3 = -1924;
-             
-             console.log(producers[0])
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
