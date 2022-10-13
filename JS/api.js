@@ -28,11 +28,6 @@ sourceData = r.json()
         runningTime.push(p[i].running_time);
         description.push(p[i].description);
 
-        for(i=0; i < uniqueProducerSet.size; i++)
-        {
-            uniqueProducers.push(p[i]);
-        }
-
         images.push(p[i].image);
         movieData.push({x: dateReleased[i],y: ratings[i]})
         movieData2.push({x: runningTime[i],y: ratings[i]})
