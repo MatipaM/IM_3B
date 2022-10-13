@@ -118,7 +118,7 @@ sourceData = r.json()
             let margin2 = 50; //position where placeholder image is
             let topMargin2 = 20;
             let graphHeight2 = 500;
-            let xOffset2 = 1000; //1914
+            let xOffset2 = -1924; //1914
             let yOffset2 = 3;
             
             
@@ -177,7 +177,7 @@ sourceData = r.json()
         //         // .style('fill', '#545454')
         //     })
 
-            console.log(movieData3);
+            console.log(movieData3.x, movieData3.y);
 
             vizArea2.append("text")
             .text("min")
@@ -207,7 +207,7 @@ sourceData = r.json()
              let topMargin3 = 20;
              let graphHeight3 = 500;
              let xOffset3 = 0; 
-             let yOffset3 = 1910; //1914
+             let yOffset3 = 1890; //1914
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
