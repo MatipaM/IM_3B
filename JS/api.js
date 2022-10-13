@@ -207,7 +207,7 @@ sourceData = r.json()
              let topMargin3 = 20;
              let graphHeight3 = 500;
              let xOffset3 = 0; 
-             let yOffset3 = 1890; //1914
+             let yOffset3 = -1000; //1914
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
@@ -253,7 +253,7 @@ sourceData = r.json()
              .style('fill', '#545454')
  
              vizArea3.append("text")
-             .text("%")
+             .text("year")
              .attr("x", 0)
              .attr("y", 300)
              .style("font-size", "20px")
