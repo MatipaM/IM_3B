@@ -177,6 +177,8 @@ sourceData = r.json()
         //         // .style('fill', '#545454')
         //     })
 
+            console.log(movieData3);
+
             vizArea2.append("text")
             .text("min")
             .attr("x", 300)
