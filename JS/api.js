@@ -40,7 +40,8 @@ sourceData = r.json()
         images.push(p[i].image);
         movieData.push({x: dateReleased[i],y: ratings[i]})
         movieData2.push({x: runningTime[i],y: ratings[i]})
-        movieData3.push({x: producers[i], y: ratings[i]})
+        // movieData3.push({x: producers[i], y: ratings[i]})
+        movieData3.push({x: runningTime[i], y: dateReleased[i]})
     }
 
         console.log(movieData, movieData2)
@@ -214,18 +215,14 @@ sourceData = r.json()
              let margin3 = 50; //position where placeholder image is
              let topMargin3 = 20;
              let graphHeight3 = 500;
-             let xOffset3 = 20; //1914
-             let yOffset3 = 0;
+             let xOffset3 = 0; //1914
+             let yOffset3 = -1924;
              
              console.log(producers[0])
              
              let vizArea3 = d3.select("#viz-3");
-             let xScale3 = d3.scaleLinear()
-            //  .domain([uniqueProducers[0], uniqueProducers[1], uniqueProducers[2], uniqueProducers[3]])
-            .domain("Isao Takahata", "Hayao Miyazaki", "Toshio Suzuki", "Yoshiaki Nishimura")
-            // .domain([0,125])
-             .range([0,500]);
-             let yScale3 = d3.scaleLinear().domain([0,100]).range([500,0]);
+             let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
+             let yScale3 = d3.scaleTime().domain([1985,2025]).range([0,500]);
              
              vizArea3
              .append('g')
@@ -265,21 +262,9 @@ sourceData = r.json()
                  return yScale(d.y)
              })
              .attr("r",3)
-             // .on("mouseenter", function (actual, i) { // change colour and add more info on other side
-             //     d3.select(this)
-             //     .style("fill", "red")
-             //     console.log(sourceData);
-             //     document.querySelector(".text-3a").innerText = movieTitles[i]; 
-             //     document.querySelector(".text-3b").innerText = description[i];
-             //     document.querySelector(".img-2").src = images[i];
-             // })
-         // .on("mouseleave", function (actual, i) { //change colour back
-         //         d3.select(this)
-         //         // .style('fill', '#545454')
-         //     })
- 
-             vizArea3.append("text")
-             .text("producers")
+
+             vizArea2.append("text")
+             .text("min")
              .attr("x", 300)
              .attr("y", 570)
              .style("font-size", "20px")
@@ -291,14 +276,6 @@ sourceData = r.json()
              .attr("y", 300)
              .style("font-size", "20px")
              .style('fill', '#545454')
- 
- 
-             d3.selectAll("label") //for each p element, it returns Hello
-             .data(producers) //binding data to element p, takes in an array
-             .text(function(d, i){ //i is index
-                 let text = d3.selectAll("label").innerText;
-                 text = producer[i]; //this refers to the element being return in d3.selectAll("p")
-             })
 })
 .catch(
     error => console.warn('Our warning',error));
