@@ -118,7 +118,7 @@ sourceData = r.json()
             let margin2 = 50; //position where placeholder image is
             let topMargin2 = 20;
             let graphHeight2 = 500;
-            let xOffset2 = 0; //1914
+            let xOffset2 = 1000; //1914
             let yOffset2 = 3;
             
             
