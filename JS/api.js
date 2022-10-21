@@ -202,62 +202,90 @@ sourceData = r.json()
             })
 
 
-             //graph 3
-             let margin3 = 50; //position where placeholder image is
-             let topMargin3 = 20;
-             let graphHeight3 = 500;
-             let xOffset3 = 0; 
-             let yOffset3 = 0; //1914
+            //  //graph 3
+            //  let margin3 = 50; //position where placeholder image is
+            //  let topMargin3 = 20;
+            //  let graphHeight3 = 500;
+            //  let xOffset3 = 0; 
+            //  let yOffset3 = 0; //1914
              
-             let vizArea3 = d3.select("#viz-3");
-             let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
-             let yScale3 = d3.scaleTime().domain([1985,2025]).range([0,500]);
+            //  let vizArea3 = d3.select("#viz-3");
+            //  let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
+            //  let yScale3 = d3.scaleTime().domain([1985,2025]).range([0,500]);
              
-             vizArea3
-             .append('g')
-             .style('stroke', '#545454')
-             .attr("transform", `translate(${margin3},${topMargin3})`)
-             .call(d3.axisLeft(yScale3));
+            //  vizArea3
+            //  .append('g')
+            //  .style('stroke', '#545454')
+            //  .attr("transform", `translate(${margin3},${topMargin3})`)
+            //  .call(d3.axisLeft(yScale3));
              
              
-             vizArea3
-             .append('g')
-             .style('stroke', '#545454')
-             .attr("transform", `translate(${margin3},${graphHeight3+topMargin3})`)
-             .call(d3.axisBottom(xScale3));
+            //  vizArea3
+            //  .append('g')
+            //  .style('stroke', '#545454')
+            //  .attr("transform", `translate(${margin3},${graphHeight3+topMargin3})`)
+            //  .call(d3.axisBottom(xScale3));
 
              
-             vizArea3
-             .selectAll("dots")
-             .data(movieData3) 
-             .enter() 
-             .append("circle")
-             .style('fill', '#545454')
-             .attr("cx", function(d){ 
-                 d.x = d.x -xOffset3
-                 console.log(d.x)
-                 return xScale(d.x)
-             })
-             .attr("cy", function(d){
-                 d.y = d.y - yOffset3
-                 console.log(d.y)
-                 return yScale(d.y)
-             })
-             .attr("r",3)
+            //  vizArea3
+            //  .selectAll("dots")
+            //  .data(movieData3) 
+            //  .enter() 
+            //  .append("circle")
+            //  .style('fill', '#545454')
+            //  .attr("cx", function(d){ 
+            //      d.x = d.x -xOffset3
+            //      console.log(d.x)
+            //      return xScale(d.x)
+            //  })
+            //  .attr("cy", function(d){
+            //      d.y = d.y - yOffset3
+            //      console.log(d.y)
+            //      return yScale(d.y)
+            //  })
+            //  .attr("r",3)
 
-             vizArea2.append("text")
-             .text("min")
-             .attr("x", 300)
-             .attr("y", 570)
-             .style("font-size", "20px")
-             .style('fill', '#545454')
+            //  vizArea2.append("text")
+            //  .text("min")
+            //  .attr("x", 300)
+            //  .attr("y", 570)
+            //  .style("font-size", "20px")
+            //  .style('fill', '#545454')
  
-             vizArea3.append("text")
-             .text("year")
-             .attr("x", 0)
-             .attr("y", 300)
-             .style("font-size", "20px")
-             .style('fill', '#545454')
+            //  vizArea3.append("text")
+            //  .text("year")
+            //  .attr("x", 0)
+            //  .attr("y", 300)
+            //  .style("font-size", "20px")
+            //  .style('fill', '#545454')
+
+            //graph 3 - pie chart
+            let vizArea3 = d3.select("#viz-3");
+            width3 = svg.attr('width');
+            height3 = svg.attr('height');
+            radius = Math.min(width3, height3)/2;
+
+            var g = vizArea3.append('g')
+            .attr('transform', `translate(`+ width3 / 2 + ',' + height3/2`)`)
+
+            var colour = d3.scaleOrdinal(['#9B9B9B']) //can fill with more colours to fill pie chart with
+            var pie = d3.pie();
+            var arc = d3.arc()
+            .innerRadius(0)
+            .outerRadius(radius);
+
+            var arcs = g.selectAll('arc')
+            .data(pie(movieData2))
+            .enter()
+            .append('g')
+            .attr('class', 'arc')
+
+            arcs.append('path')
+            .attr('fill', function(d,i){
+                return colour(i)
+            })
+            .attr('d', arc);
+
 })
 .catch(
     error => console.warn('Our warning',error));
