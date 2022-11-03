@@ -126,6 +126,7 @@ function LoadPages()
                 console.log("on" + {pageName} + "page");
         
                 let gridBtns = document.getElementById('grid-btns');
+                gridBtns.classList.add("h-entry");
                 let buttons = gridBtns.getElementsByTagName('a'); //array
                 console.log(i);
         
