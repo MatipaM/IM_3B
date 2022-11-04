@@ -47,7 +47,7 @@ LoadPages();
 function LoadPages()
 {
 
-    let blogPages = ["BlogPost1.html", "BlogPost2.html", "BlogPost3.html"];
+    let blogPages = ["BlogPost1.html", "BlogPost2.html", "BlogPost3.html", "BlogPost4.html"];
     let dataPages = ["DataVisualisationSection.html", "DataArt.html"];
     let designPages = ["DesignWireframes.html", "RevisedWireframes.html", "DesignDocumentation.html", "DataArtDocumentation.html", "InteractiveDataDocumentation.html"];
 
