@@ -47,9 +47,9 @@ p:nth-child(2){
 }
 
 .references{
-    padding: 2%;
+    padding: 1%;
     margin-top: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
     background-color: aliceblue;
     opacity: 0.8;
     border-radius: 5%;

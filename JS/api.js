@@ -205,14 +205,14 @@ sourceData = r.json()
 
 
             //  //graph 3
-             let margin3 = 50; //position where placeholder image is
+             let margin3 = 100; //position where placeholder image is
              let topMargin3 = 20;
              let graphHeight3 = 500;
-             let xOffset3 = 50; 
-             let yOffset3 = -1921; //1914
+             let xOffset3 = 100; 
+             let yOffset3 = -1871; //1914
              
              let vizArea3 = d3.select("#viz-3");
-             let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
+             let xScale3 = d3.scaleLinear().domain([80,140]).range([0,475]);
              let yScale3 = d3.scaleTime().domain([1985,2025]).range([0,500]);
              
              vizArea3
