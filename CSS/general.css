@@ -57,6 +57,17 @@ h1{
     margin-top: 20%;
 }
 
+h2{
+    
+}
+
+h3{
+    font-size: 75%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-transform: uppercase;
+}
+
 body{
     cursor: auto;  
 }
