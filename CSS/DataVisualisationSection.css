@@ -100,13 +100,14 @@ h1{
 h2{
     margin-top: 10%;
     font-size: 150%;
-    text-align: center;
+    text-align: left;
+    padding-left: 2%;
+    color: #545454;
 }
 
 h3{
     font-size: 100%;
     padding: 5%;
-    text-align: justify;
 }
 
 .img-1{

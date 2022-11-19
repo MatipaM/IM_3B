@@ -23,12 +23,9 @@ color: blue;
     color: blue;
 }
 
-.p-contact{
-    background-color: rgba(25,43,55);
-    border-radius: 5%;
-    width: 50%;
-    color: rgba(227,245,245);
-}
+/* .p-contact{
+   margin-bottom: 10%;
+} */
 
 .grid{
     display: grid;
@@ -40,16 +37,19 @@ color: blue;
 }
 
 p:nth-child(1){
-    width: 90%;
+    width: 80%;
+    padding: 5%;
 }
 
 p:nth-child(2){
-    width: 90%;
+    width: 80%;
+    padding: 5%;
 }
 
 .references{
     padding: 2%;
     margin-top: 10%;
+    margin-bottom: 2%;
     background-color: aliceblue;
     opacity: 0.8;
     border-radius: 5%;
@@ -60,9 +60,6 @@ p:nth-child(2){
     background-color: rgba(155,202,180);
 }
 
-footer{
-    margin-top: 2%;
-}
 
 @media (max-width: 512px){ 
         h1{

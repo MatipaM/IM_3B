@@ -119,8 +119,7 @@ function LoadPages()
                 }
             }
 
-
-            // not working            
+          
             if(pageName == selectedArray[i])
             {
                 console.log("on" + {pageName} + "page");

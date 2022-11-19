@@ -78,7 +78,7 @@ p{
     font-size: 125%;
     margin-left: 5%;
     margin-right: 5%;
-    text-align: justify;
+    text-align: left;
 }
 
 i{
@@ -169,10 +169,16 @@ li{
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* 
-#check{
-    display:none;
-} */
+footer{
+    background-color: rgba(255,255,255,0.5);
+    margin-left: -5%;
+    margin-right: -5%;
+    margin-bottom: -5%;
+    /* margin-top: 20%; */
+    bottom:0;
+    padding: 1%;
+    
+}
 
  @media (max-width: 512px){
 
@@ -180,44 +186,6 @@ li{
         letter-spacing: 0.25px;
         word-spacing: 2px;
     }
-
-    /* .Bars{
-        margin-top: 5%;
-         display: block; 
-    } */
-
-    /* nav ul{
-        position: fixed; 
-        width: 100%;
-        margin-top: 0%;
-        font-size: 75%;
-        background-color: rgba(236,236,219,1);
-        text-align: center;
-        left: -120%;
-        transition: all 0.5s;
-        margin-bottom: 5%;
-    }
-
-    nav ul li a{ 
-        font-size: 200%;
-        padding: 5% 0%;
-    }
-
-    nav a{
-        display: block;
-    }
-
-    .LoginIcon{
-        font-size:250%;
-    }
-
-    #check:checked ~ ul{
-        left: 0%;
-    } */
-
-    /* .Submit{
-        left: -120%;
-    } */
 
     i{
         font-size: 250%;

@@ -201,13 +201,15 @@ sourceData = r.json()
                 text = movieTitles[i]; //this refers to the element being return in d3.selectAll("p")
             })
 
+            
+
 
             //  //graph 3
              let margin3 = 50; //position where placeholder image is
              let topMargin3 = 20;
              let graphHeight3 = 500;
              let xOffset3 = 50; 
-             let yOffset3 = 1521; //1914
+             let yOffset3 = -1921; //1914
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear().domain([80,140]).range([0,500]);
@@ -253,7 +255,7 @@ sourceData = r.json()
              .style('fill', '#545454')
  
              vizArea3.append("text")
-             .text("year")
+             .text("years")
              .attr("x", 0)
              .attr("y", 300)
              .style("font-size", "20px")
