@@ -9,6 +9,8 @@ html{
   background-image: url(../Images/StudioGhibliBackgroundImg.png);
   background-size: cover;
   height: 100vh;
+  /* min-height: 100%; */
+  /* background-repeat: no-repeat; */
 }
 
 *{
@@ -53,8 +55,9 @@ nav{
 
 h1{
     font-family: Coda_Caption;
-    font-size: 400%;
-    margin-top: 20%;
+    font-size: 250%;
+    margin-top: 5%;
+    text-align: center;
 }
 
 h2{
@@ -187,8 +190,8 @@ footer{
     /* padding-bottom: 100%; */
     /* margin-top: 20%; */
     bottom:0;
-    padding: 1%;
-    margin-top: 5%;
+    padding: -1%;
+    margin-top: 2%;
     
 }
 

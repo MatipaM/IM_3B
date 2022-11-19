@@ -1,8 +1,8 @@
 .grid{
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 5%;
@@ -61,6 +61,19 @@ a:nth-child(4)
     margin-bottom: 5%;
 }
 
+a:nth-child(5)
+{
+    width:75%;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 3%;
+
+    -moz-box-shadow: 0 0 1% rgba(155,202,180);
+    -webkit-box-shadow: 0 0 1% rgba(155,202,180);
+    box-shadow: 0 0 1% rgba(218,237,232);
+
+    margin-bottom: 5%;
+}
+
 a:nth-child(1):hover
 {
     background-color: rgba(155,202,180);
@@ -74,6 +87,18 @@ a:nth-child(2):hover
 }
 
 a:nth-child(3):hover
+{
+    background-color: rgba(155,202,180);
+    cursor: pointer;
+}
+
+a:nth-child(4):hover
+{
+    background-color: rgba(155,202,180);
+    cursor: pointer;
+}
+
+a:nth-child(5):hover
 {
     background-color: rgba(155,202,180);
     cursor: pointer;
