@@ -1,5 +1,5 @@
 //NAV BAR
-let navMenu = ["index.html", "BlogPostSection.html", "DesignSection.html", "Data.html"];
+const navMenu = ["index.html", "BlogPostSection.html", "DesignSection.html", "Data.html"];
 let navArea = document.getElementById('nav');
 let navButtons = navArea.getElementsByTagName('a');
 let icons = navArea.getElementsByTagName('i');
@@ -47,9 +47,9 @@ LoadPages();
 function LoadPages()
 {
 
-    let blogPages = ["BlogPost1.html", "BlogPost2.html", "BlogPost3.html", "BlogPost4.html"];
-    let dataPages = ["DataVisualisationSection.html", "DataArt.html"];
-    let designPages = ["DesignWireframes.html", "RevisedWireframes.html", "DesignDocumentation.html", "DataArtDocumentation.html", "InteractiveDataDocumentation.html"];
+    const blogPages = ["BlogPost1.html", "BlogPost2.html", "BlogPost3.html", "BlogPost4.html"];
+    const dataPages = ["DataVisualisationSection.html", "DataArt.html"];
+    const designPages = ["DesignWireframes.html", "RevisedWireframes.html", "DesignDocumentation.html", "DataArtDocumentation.html", "InteractiveDataDocumentation.html"];
 
     let selectedArray = [];
     let designPagesselectedGridName;

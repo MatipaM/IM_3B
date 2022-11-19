@@ -36,11 +36,11 @@ sourceData = r.json()
 
         console.log(movieData, movieData2)
 
-            let margin = 50; 
-            let topMargin = 20;
-            let graphHeight = 500;
-            let xOffset = -5;
-            let yOffset = 5;
+            const margin = 50; 
+            const topMargin = 20;
+            const graphHeight = 500;
+            const xOffset = -5;
+            const yOffset = 5;
             
             
             let vizArea = d3.select("#viz");
@@ -115,11 +115,11 @@ sourceData = r.json()
 
 
             //graph 2
-            let margin2 = 50; //position where placeholder image is
-            let topMargin2 = 20;
-            let graphHeight2 = 500;
-            let xOffset2 = -1924; //1914
-            let yOffset2 = 3;
+            const margin2 = 50; //position where placeholder image is
+            const topMargin2 = 20;
+            const graphHeight2 = 500;
+            const xOffset2 = -1924; //1914
+            const yOffset2 = 3;
             
             
             let vizArea2 = d3.select("#viz-2");
@@ -205,11 +205,11 @@ sourceData = r.json()
 
 
             //  //graph 3
-             let margin3 = 100; //position where placeholder image is
-             let topMargin3 = 20;
-             let graphHeight3 = 500;
-             let xOffset3 = 100; 
-             let yOffset3 = -1871; //1914
+            const margin3 = 100; //position where placeholder image is
+            const topMargin3 = 20;
+            const graphHeight3 = 500;
+            const xOffset3 = 100; 
+            const yOffset3 = -1871; //1914
              
              let vizArea3 = d3.select("#viz-3");
              let xScale3 = d3.scaleLinear().domain([80,140]).range([0,475]);
