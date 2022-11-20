@@ -47,8 +47,8 @@ LoadPages();
 function LoadPages()
 {
 
-    const blogPages = ["BlogPost1.html", "BlogPost2.html", "BlogPost3.html", "BlogPost4.html"];
-    const dataPages = ["DataVisualisationSection.html", "DataArt.html"];
+    const blogPages = ["BlogPost1.html", "BlogPost2.html", "BlogPost3.html", "BlogPost4.html", "BlogPost5.html"];
+    const dataPages = ["DataVisualisationSection.html", "DataArt.html", "DataGame.html"];
     const designPages = ["DesignWireframes.html", "RevisedWireframes.html", "DesignDocumentation.html", "DataArtDocumentation.html", "InteractiveDataDocumentation.html"];
 
     let selectedArray = [];
@@ -57,7 +57,6 @@ function LoadPages()
 
     let path = window.location.pathname;
     let pageName = path.split("/").pop();
-    console.log(pageName);
 
 
     for(let a = 0; a < blogPages.length; a++)
@@ -73,8 +72,6 @@ function LoadPages()
     {
 
         if((pageName == designPages[b]) || (pageName == "DesignSection.html")){
-            console.log(pageName == designPages[b]);
-            console.log(pageName == "DesignSection.html");
             selectedArray = designPages;
             selectedGridName = "design-grid"
         }else{
@@ -87,8 +84,6 @@ function LoadPages()
 
         if((pageName == dataPages[c]) || (pageName == "Data.html"))
         {
-            console.log(pageName == dataPages[c]);
-            console.log(pageName == "Data.html");
             selectedArray = dataPages;
             selectedGridName = "data-grid";
         }
@@ -99,9 +94,7 @@ function LoadPages()
 
     if(selectedGridName != null)
     {
-        console.log(selectedGridName);
             let selectedGrid = document.getElementById(selectedGridName);
-            console.log(selectedArray);
       
             for(let i = 0; i < selectedArray.length; i++)
         {
@@ -110,11 +103,9 @@ function LoadPages()
                 currentButtons = selectedGrid.getElementsByTagName('a');
 
                 currentButtons[i].classList.add("u-url");
-                console.log(currentButtons);
         
                 currentButtons[i].onclick = function()
                 {
-                    console.log(currentButtons[i]);
                     location.href = selectedArray[i]
                 }
             }
@@ -122,7 +113,6 @@ function LoadPages()
           
             if(pageName == selectedArray[i])
             {
-                console.log("on" + {pageName} + "page");
         
                 let gridBtns = document.getElementById('grid-btns');
                 gridBtns.classList.add("h-entry");
