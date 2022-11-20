@@ -1,5 +1,3 @@
-// import * as fs from "fs";
-
 let sourceData = []
 
 fetch('https://ghibliapi.herokuapp.com/people')
@@ -27,7 +25,7 @@ sourceData = r.json()
     subTitle.innerHTML = "Use the description to guess the character's profile";
 
     let playBtn = document.createElement("a"); 
-    playBtn.innerText = "Play";
+    playBtn.innerText = "Press 'Play'";
     playBtn.setAttribute('id', "playBtn");
     DataGameGrid.append(playBtn);
 
@@ -81,9 +79,11 @@ sourceData = r.json()
 
         correctImg.onclick = function correct()
         {
-            answer.innerText = "Yes! well done";
+            answer.innerText = "Yes! well done, press 'Play' to play again";
             console.log("correct image called");
         }
+
+   
       
 function generateButtons(randomNum)
 {
@@ -136,6 +136,8 @@ function generateButtons(randomNum)
         }
     }
 
+
+
     function randomiseInt(imgArray)
     {
         let randomInt = Math.floor(Math.random() * (57));   
@@ -178,14 +180,15 @@ function generateButtons(randomNum)
         {
             ImageGrid.append(randomArray[i]);
         }
+
+        // incorrectImg.onclick = function correct()
+        // {
+        //     answer.innerText = "No, sorry, try again!";
+        // }
     
     }
-        console.log(correctImg);
 
-              incorrectImg.onclick = function correct()
-        {
-            answer.innerText = "No, sorry, try again!";
-        }
+  
   
 }   
 
