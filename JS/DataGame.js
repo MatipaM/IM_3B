@@ -12,7 +12,11 @@ sourceData = r.json()
     let age= [];
     let eye_colour = [];
     let hair_colour = [];
+
     let DataGameGrid = document.getElementById("data-game-grid");
+
+    let ImageGrid = document.createElement("section");
+    ImageGrid.setAttribute('id',"grid");
 
     let Title = document.createElement("h1");
     let subTitle = document.createElement("h2");
@@ -36,7 +40,7 @@ sourceData = r.json()
   
     ];
 
-
+   
 
 
     for(i=0; i <= 4; i++)
@@ -46,6 +50,12 @@ sourceData = r.json()
         DataGameGrid.append(descriptionButton);
     }
 
+    DataGameGrid.append(ImageGrid);
+    let correctImg = document.createElement("img");
+
+    let incorrectImgs = [];
+    let index;
+    let randomArray;
 
     //fills up arrays
     for(i=0; i < p.length; i++)
@@ -59,6 +69,7 @@ sourceData = r.json()
 
 
         playBtn.onclick = function randomNum(){
+            index = 0;
             console.log("button clicked");
             let randomNum =  (Math.floor(Math.random()*(names.length)));
             generateButtons(randomNum);
@@ -96,28 +107,71 @@ function generateButtons(randomNum)
         }
 
         descriptionButtons[i].innerText = innerText + innerVar;
+
+        correctImg.src = "../Images/Characters/"+myCharacterNames[randomNum]+(".png");
     }
 
+    for(i = 0; i<4; i++)
+    {
+        let incorrectImg = document.createElement("img");
+        let incorrectPickBtn = document.createElement("a");
+        incorrectImgs.push(incorrectImg);
 
-        let correctImg = document.createElement("img");
-        correctImg.src = "../Images/Characters/"+myCharacterNames[randomNum]+(".png");
+        if(i==3)
+        {
+            console.log(incorrectImgs)
+            let imgArray = [correctImg, incorrectImgs[0], incorrectImgs[1], incorrectImgs[2]];
+            randomiseInt(imgArray);
+        }
+    }
+
+    function randomiseInt(imgArray)
+    {
+        let randomInt = Math.floor(Math.random() * (57));   
+        checkForDouble(randomInt, imgArray);      
+    }
+
+    function checkForDouble(randomInt, imgArray)
+    {
+        if(randomNum==randomInt)
+        {
+            randomiseInt(); 
+        }
+        else{
+            assignIncorrectImg(randomInt, imgArray); //or call function with this paramtere
+        } 
+    }
+
+    function assignIncorrectImg(randomInt, imgArray)
+    {
+        while(index<4)
+        {
+            incorrectImgs[index].src = "../Images/Characters/"+myCharacterNames[randomInt]+(".png");
+            index++;
+            randomiseInt(imgArray);
+            
+        }
+
+        if(index==4)
+        {
+            displayShuffle(imgArray)
+        }
+    }
+
+    function displayShuffle(imgArray)
+    {
+        console.log(imgArray);
+        randomArray = imgArray.sort(()=> Math.random()-0.5);
+
+        for(i=0; i<randomArray.length; i++)
+        {
+            ImageGrid.append(randomArray[i]);
+        }
+    
+    }
         console.log(correctImg);
-
-        loadOtherImages(randomNum);
-
   
 }   
-
-
-
-function loadOtherImages(randomNum)
-{
-    //dont laod correct image
-}
-
-     
-
-
 
 })
 .catch(
