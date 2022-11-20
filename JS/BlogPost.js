@@ -63,7 +63,7 @@ let heading = document.createElement("h1");
                 section.append(p3);
                 
                 let img1 = document.createElement("img");
-                img1.src = "/Images/BlogPostTheory2Img/Fig1.png";
+                img1.src = "../IM_3B/Images/BlogPostTheory2Img/Fig1.png";
                 img1.classList.add("img-1");
                 img1.alt = "Image of website wireframes";
                 section.append(img1);
@@ -73,7 +73,7 @@ let heading = document.createElement("h1");
                 section.append(figureText1);
 
                 let img2 = document.createElement("img");
-                img2.src = "/Images/BlogPostTheory2Img/Fig2.png";
+                img2.src = "../IM_3B/Images/BlogPostTheory2Img/Fig2.png";
                 img2.classList.add("img-2");
                 img2.alt = "Image showing website style guide";
                 section.append(img2);
@@ -88,7 +88,7 @@ let heading = document.createElement("h1");
                 section.append(p5);
 
                 let img3 = document.createElement("img");
-                img3.src = "/Images/BlogPostTheory2Img/Fig3.png";
+                img3.src = "../IM_3B/Images/BlogPostTheory2Img/Fig3.png";
                 img3.classList.add("img-3");
                 img3.alt = "Image showing misaligned button and reference elements";
                 section.append(img3);
