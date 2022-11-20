@@ -118,7 +118,7 @@ function generateButtons(randomNum)
 
         descriptionButtons[i].innerText = innerText + innerVar;
 
-        correctImg.src = "../Images/Characters/"+myCharacterNames[randomNum]+(".png");
+        correctImg.src = "../IM_3B/Images/Characters/"+myCharacterNames[randomNum]+(".png");
     }
 
     let incorrectImg;
@@ -159,7 +159,7 @@ function generateButtons(randomNum)
     {
         while(index<4)
         {
-            incorrectImgs[index].src = "../Images/Characters/"+myCharacterNames[randomInt]+(".png");
+            incorrectImgs[index].src = "../IM_3B/Images/Characters/"+myCharacterNames[randomInt]+(".png"); //../Images/Characters/"+myCharacterNames[randomInt]+(".png")
             index++;
             randomiseInt(imgArray);
             
