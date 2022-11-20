@@ -56,6 +56,9 @@ sourceData = r.json()
     let incorrectImgs = [];
     let index;
     let randomArray;
+    let answer = document.createElement("h3");
+    DataGameGrid.append(answer);
+    answer.innerText = "result will display here";
 
     //fills up arrays
     for(i=0; i < p.length; i++)
@@ -72,7 +75,14 @@ sourceData = r.json()
             index = 0;
             console.log("button clicked");
             let randomNum =  (Math.floor(Math.random()*(names.length)));
+            answer.innerHTML = "";
             generateButtons(randomNum);
+        }
+
+        correctImg.onclick = function correct()
+        {
+            answer.innerText = "Yes! well done";
+            console.log("correct image called");
         }
       
 function generateButtons(randomNum)
@@ -111,10 +121,11 @@ function generateButtons(randomNum)
         correctImg.src = "../Images/Characters/"+myCharacterNames[randomNum]+(".png");
     }
 
+    let incorrectImg;
+
     for(i = 0; i<4; i++)
     {
-        let incorrectImg = document.createElement("img");
-        let incorrectPickBtn = document.createElement("a");
+        incorrectImg = document.createElement("img");
         incorrectImgs.push(incorrectImg);
 
         if(i==3)
@@ -170,6 +181,11 @@ function generateButtons(randomNum)
     
     }
         console.log(correctImg);
+
+              incorrectImg.onclick = function correct()
+        {
+            answer.innerText = "No, sorry, try again!";
+        }
   
 }   
 
