@@ -49,7 +49,7 @@ function LoadPages()
 
     const blogPages = ["BlogPost1.html", "BlogPost2.html", "BlogPost3.html", "BlogPost4.html", "BlogPost5.html"];
     const dataPages = ["DataVisualisationSection.html", "DataArt.html", "DataGame.html"];
-    const designPages = ["DesignWireframes.html", "RevisedWireframes.html", "DesignDocumentation.html", "DataArtDocumentation.html", "InteractiveDataDocumentation.html"];
+    const designPages = ["DesignWireframes.html", "RevisedWireframes.html", "DesignDocumentation.html", "DataArtDocumentation.html", "InteractiveDataDocumentation.html", "DataGameDoc.html"];
 
     let selectedArray = [];
     let designPagesselectedGridName;
