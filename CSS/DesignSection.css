@@ -77,6 +77,19 @@ a:nth-child(5)
     margin-bottom: 5%;
 }
 
+a:nth-child(6)
+{
+    width:75%;
+    background-color: rgba(255, 255, 255, 0.807);
+    border-radius: 3%;
+
+    -moz-box-shadow: 0 0 1% rgba(155,202,180);
+    -webkit-box-shadow: 0 0 1% rgba(155,202,180);
+    box-shadow: 0 0 1% rgba(218,237,232);
+
+    margin-bottom: 5%;
+}
+
 a:nth-child(1):hover
 {
     background-color: rgba(155,202,180);
@@ -102,6 +115,12 @@ a:nth-child(4):hover
 }
 
 a:nth-child(5):hover
+{
+    background-color: rgba(155,202,180);
+    cursor: pointer;
+}
+
+a:nth-child(6):hover
 {
     background-color: rgba(155,202,180);
     cursor: pointer;
@@ -160,6 +179,10 @@ h1{
     margin-top: 0%;
     margin-bottom: 0%;
     padding-bottom: 0%;
+}
+
+h2{
+    text-align: center;
 }
 
 @media (max-width: 512px){ 

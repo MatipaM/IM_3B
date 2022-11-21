@@ -1,0 +1,14 @@
+html {
+    /* background-image: linear-gradient(rgba(155,202,180), rgba(218,237,232)); */
+    background-image: none;
+    background-color: rgba(155,202,180);
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-width: 40%;
+    max-height: 50%;
+    border-radius: 5%;
+    margin-left: 5%;
+}
