@@ -56,7 +56,7 @@ sourceData = r.json()
     let randomArray;
     let answer = document.createElement("h3");
     DataGameGrid.append(answer);
-    answer.innerText = "result will display here";
+    answer.innerText = "results will display here";
 
     //fills up arrays
     for(i=0; i < p.length; i++)
@@ -72,21 +72,27 @@ sourceData = r.json()
         playBtn.onclick = function randomNum(){
             index = 0;
             console.log("button clicked");
-            let randomNum =  (Math.floor(Math.random()*(names.length)));
-            answer.innerHTML = "";
-            generateButtons(randomNum);
+            startGame();
         }
 
         correctImg.onclick = function correct()
         {
-            answer.innerText = "Yes! well done, press 'Play' to play again";
+            answer.innerText = "Yes! well done.";
             console.log("correct image called");
+
+            setTimeout(startGame, 1500);
+            
         }
 
-   
+        function startGame()
+        {
+            let randomNum =  (Math.floor(Math.random()*(names.length)));
+            generateButtons(randomNum);
+        }
       
 function generateButtons(randomNum)
 {
+    answer.innerHTML = "";
     let descriptionButtons = document.getElementsByTagName("h3");
 
     for(i=0; i <= 4; i++)
